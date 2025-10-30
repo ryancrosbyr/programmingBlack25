@@ -3,9 +3,7 @@
 <head>
 
 <title> A webpage on puppies </title>
-<script>
 
-</script>
 </head>
 <body>
     <h1> A website on puppies</h1>
@@ -94,13 +92,70 @@
 </ul>
 
 
-<form action="console.log(dogType.value)" method="get">
+<!-- Dog Adoption Opinion Form -->
+<h2>Share Your Opinion on Adopting Dogs</h2>
 
-    <input type="text" id="dogType">
-    <label for="dogType" > Which type of dog do you like? </label>
-    
-    <input type="submit" value ="Submit"> 
+<form action="" method="get">
+
+  <!-- Personal Information -->
+  <fieldset>
+    <legend>Personal Information</legend>
+
+    <label for="name">Your Name:</label><br>
+    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+    <br><br>
+
+    <label for="adoptionDate">When would you consider adopting a dog?</label><br>
+    <input type="date" id="adoptionDate" name="adoptionDate">
+  </fieldset>
+
+  <br>
+
+  <!-- Preferences -->
+  <fieldset>
+    <legend>Dog Adoption Preferences</legend>
+
+    <label for="dogBreed">If you were to adopt, which breed would you prefer?</label><br>
+    <select id="dogBreed" name="dogBreed">
+      <option value="">-- Select a breed --</option>
+      <option value="labrador">Labrador</option>
+      <option value="borderCollie">Border Collie</option>
+      <option value="maltese">Maltese</option>
+      <option value="beagle">Beagle</option>
+      <option value="mixed">Mixed Breed</option>
+    </select>
+    <br><br>
+
+    <p>What are your main reasons for adopting a dog? (Select all that apply)</p>
+    <input type="checkbox" id="companionship" name="reasons" value="companionship">
+    <label for="companionship">Companionship</label><br>
+
+    <input type="checkbox" id="rescue" name="reasons" value="rescue">
+    <label for="rescue">To rescue a dog in need</label><br>
+
+    <input type="checkbox" id="family" name="reasons" value="family">
+    <label for="family">For my family</label><br>
+
+    <input type="checkbox" id="exercise" name="reasons" value="exercise">
+    <label for="exercise">To stay active / exercise</label><br>
+  </fieldset>
+
+  <br>
+
+  <!-- Opinions -->
+  <fieldset>
+    <legend>Your Opinion</legend>
+
+    <label for="opinions">Share your thoughts about dog adoption:</label><br>
+    <textarea id="opinions" name="opinions" rows="5" cols="50" placeholder="Write your opinion here..."></textarea>
+  </fieldset>
+
+  <br>
+
+  <input type="submit" value="Submit Opinion">
+
 </form>
+
 
 </body>
 </html>
